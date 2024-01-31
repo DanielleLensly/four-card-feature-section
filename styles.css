@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(assets/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(assets/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Thin';
+  src: url(assets/Poppins/Poppins-Thin.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  font-size: 15px;
+  --red: #ea5454;
+  --aqua: #44d3d2;
+  --yellow: #fcae4a;
+  --blue: #549ef2;
+  --grey: #4d4f62;
+  --white: #fafafa;
+  background: var(--white);
+}
+
+.intro {
+  margin: 85px 32px 78px 32px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins Thin';
+  color: var(--grey);
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.167px;
+  margin: 0;
+}
+
+h2 {
+  color: var(--grey);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.167px;
+  margin: 0;
+}
+
+p {
+  color: var(--grey);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.104px;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.cards {
+  padding: 0 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 15px 30px -11px var(--grey);
+  margin-bottom: 24px;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.card h3 {
+  margin: 0;
+  color: var(--grey);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  color: var(--grey);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.09px;
+  opacity: 0.5;
+}
+
+.card img {
+  width: 57px;
+  height: 57px;
+  align-self: flex-end;
+  margin-top: 33px;
+}
+
+.left, .center {
+  padding-bottom: 24px;
+}
+
+.aqua {
+  border-top: 3.5px solid var(--aqua);
+}
+
+.red {
+  border-top: 3.5px solid var(--red);
+}
+
+.yellow {
+  border-top: 3.5px solid var(--yellow);
+}
+
+.blue {
+  border-top: 3.5px solid var(--blue);
+}
+
+.attribution {
+  position: static;
+  bottom: 20px;
+  right: 42%;
+  left: 43%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 992px) {
+
+  .intro {
+    margin: 80px 500px 64px 500px;
+    padding-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+  }
+
+  h2 {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 570px;
+    padding: 0px 165px 80px 165px;
+  }
+
+  .card {
+    padding: 32px;
+  }
+
+  .card img {
+    padding-top: 40px;
+  }
+
+  .left, .center, .right {
+    max-width: 350px;
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 20px;
+    right: 42%;
+    left: 43%;
+    font-size: 11px;
+    text-align: center;
+  }
+}
